@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.23)
+project(Unified_Method_for_Solving_General_Polynomial_Equations)
+
+set(CMAKE_CXX_STANDARD 23)
+add_subdirectory(excerpt)
+include_directories(${Unified_Method_for_Solving_General_Polynomial_Equations_SOURCE_DIR}/excerpt/inc)
+add_executable(Unified_Method_for_Solving_General_Polynomial_Equations main.cpp)
+target_link_libraries(Unified_Method_for_Solving_General_Polynomial_Equations excerpt)
